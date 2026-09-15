@@ -1,4 +1,39 @@
 {
+  // 窗口与打开行为
+  "use_system_window_tabs": true,
+  "cli_default_open_behavior": "existing_window",
+  "default_open_behavior": "existing_window",
+  "when_closing_with_no_tabs": "keep_window_open",
+
+  // 编辑器体验
+  "vim_mode": false,
+  "expand_excerpt_lines": 5,
+
+  // 主题与外观
+  "theme": {
+    "mode": "system",
+    "light": "Tokyo Night Light",
+    "dark": "GitHub Dark Default"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
+
+  // 界面与编辑器字体
+  "ui_font_family": "Maple Mono NF",
+  "ui_font_size": 12.0,
+  "buffer_font_family": "Maple Mono NF",
+  "buffer_font_size": 12.0,
+  "buffer_font_weight": 500.0,
+
+  // 终端配置
+  "terminal": {
+    "font_size": 12.0
+  },
+
+  // AI Agent 配置
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
@@ -6,28 +41,8 @@
     },
     "model_parameters": []
   },
-  "use_system_window_tabs": true,
-  "when_closing_with_no_tabs": "keep_window_open",
-  "vim_mode": true,
-  "terminal": {
-    "font_size": 12.0
-  },
-  "expand_excerpt_lines": 5,
-  "ui_font_family": "Maple Mono NF",
-  "buffer_font_weight": 500.0,
-  "buffer_font_family": "Maple Mono NF",
-  "icon_theme": {
-    "mode": "system",
-    "light": "Material Icon Theme",
-    "dark": "Material Icon Theme"
-  },
-  "ui_font_size": 12.0,
-  "buffer_font_size": 12.0,
-  "theme": {
-    "mode": "system",
-    "light": "Tokyo Night Light",
-    "dark": "GitHub Dark Default"
-  },
+
+  // 格式化与 Prettier
   "format_on_save": "on",
   "formatter": "prettier",
   "prettier": {
@@ -38,6 +53,8 @@
     "jsxSingleQuote": true,
     "singleQuote": true
   },
+
+  // 语言特定配置
   "languages": {
     "JavaScript": {
       "formatter": [
@@ -45,7 +62,6 @@
         { "code_action": "source.fixAll.eslint" }
       ]
     },
-
     "TypeScript": {
       "formatter": [
         "prettier",
